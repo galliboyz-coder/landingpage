@@ -63,7 +63,7 @@ export default function Home() {
                   @galliboyz7
                 </span>
               </a>
-              <a
+              {/* <a
                 href="mailto:support@galliboyz.com"
                 className="group inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus:outline-none"
                 aria-label="Email support@galliboyz.com"
@@ -85,7 +85,7 @@ export default function Home() {
                 <span className="underline decoration-transparent transition group-hover:decoration-white/60">
                   support@galliboyz.com
                 </span>
-              </a>
+              </a> */}
             </div>
           </button>
         </CometCard>
