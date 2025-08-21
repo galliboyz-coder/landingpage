@@ -1,103 +1,102 @@
-import Image from "next/image";
+import { CometCard } from "@/components/ui/comet-card";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
+      <main className="relative grid min-h-screen grid-rows-[1fr_auto] place-items-center p-6 sm:p-10">
+        <CometCard>
+          <button
+            type="button"
+            className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2 saturate-0 md:my-20 md:p-4"
+            aria-label="View invite F7RA"
+            style={{
+              transformStyle: "preserve-3d",
+              transform: "none",
+              opacity: 1,
+            }}
+          >
+            <div className="mx-2 flex-1">
+              <div className="relative mt-2 aspect-[3/4] w-full">
+                <img
+                  loading="lazy"
+                  src="/logoWhite.png"
+                  alt="Galliboyz logo"
+                  className="h-full w-full object-cover contrast-75"
+                  style={{ boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px" }}
+                />
+              </div>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+            <div className="mt-6 text-center">
+              <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight drop-shadow">
+                Galliboyz
+              </h1>
+              <p className="mt-2 text-sm sm:text-lg text-zinc-200 drop-shadow">
+                <span className="font-semibold">Coming Soon</span> &mdash;
+                Streetwear crafted for the bold.
+              </p>
+            </div>
+
+            <div className="mt-6 flex flex-col items-center gap-2">
+              <a
+                href="https://instagram.com/galliboyz7"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="group inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus:outline-none"
+                aria-label="Instagram galliboyz7"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm9 3.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM12 8.25A3.75 3.75 0 1 0 12 15.75 3.75 3.75 0 0 0 12 8.25z"
+                  />
+                </svg>
+                <span className="transition group-hover:underline">
+                  @galliboyz7
+                </span>
+              </a>
+              <a
+                href="mailto:support@galliboyz.com"
+                className="group inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus:outline-none"
+                aria-label="Email support@galliboyz.com"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-.659 1.591l-7.091 7.091a2.25 2.25 0 0 1-3.182 0L3.409 8.584A2.25 2.25 0 0 1 2.75 6.993V6.75"
+                  />
+                </svg>
+                <span className="underline decoration-transparent transition group-hover:decoration-white/60">
+                  support@galliboyz.com
+                </span>
+              </a>
+            </div>
+          </button>
+        </CometCard>
+
+        <footer className="pb-6 text-center text-xs text-zinc-500">
+          Built with love. Fashion in orbit soon.
+          <p className="text-xs text-zinc-500">
+            © {new Date().getFullYear()} Galliboyz
+          </p>
+        </footer>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
