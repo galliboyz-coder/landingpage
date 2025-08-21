@@ -33,7 +33,7 @@ export default function Home() {
               </h1>
               <p className="mt-2 text-sm sm:text-lg text-zinc-200 drop-shadow">
                 <span className="font-semibold">Coming Soon</span> &mdash;
-                Streetwear crafted for the bold.
+                Born on the Streets.
               </p>
             </div>
 
